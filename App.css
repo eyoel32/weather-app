@@ -1,0 +1,160 @@
+
+/* ====== Global Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ====== Background ====== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== Main Container ====== */
+.container {
+  width: 400px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 420px;
+}
+
+/* ====== Header ====== */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* ====== Search Bar ====== */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  color: #4e73df;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background: #f8f9fc;
+}
+
+/* ====== Weather Card ====== */
+.weather-card {
+  margin-top: 20px;
+}
+
+.city-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-temp {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.weather-extra {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ====== Error Message ====== */
+.error-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+/* ====== Loader ====== */
+.loader {
+  margin-top: 15px;
+  font-size: 18px;
+}
+/* ===== SearchBar Container ===== */
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* ===== Input Field ===== */
+.btn input {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* ===== Buttons ===== */
+.btn button {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+/* Search Button */
+.btn button:first-of-type {
+  background: #ffffff;
+  color: #4e73df;
+}
+
+.btn button:first-of-type:hover {
+  background: #f1f1f1;
+}
+
+/* Location Button */
+.btn button:last-of-type {
+  background: #1cc88a;
+  color: white;
+}
+
+.btn button:last-of-type:hover {
+  background: #17a673;
+}
+ .container {
+  height: 100vh;
+}
